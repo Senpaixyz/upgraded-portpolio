@@ -1,0 +1,61 @@
+{
+"title_json":"Projects",
+"data": [
+		{
+			"image_url": "assets/img/projects/faceEmotion.jpg",
+			"title": "Face Emotion Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/fakenews.jpg",
+			"title": "Fake News Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/moviereview.jpg",
+			"title": "Movie Review Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/spamclassifier.jpg",
+			"title": "Spam Message Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/faceEmotion.jpg",
+			"title": "Face Emotion Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/fakenews.jpg",
+			"title": "Fake News Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/moviereview.jpg",
+			"title": "Movie Review Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		},
+		{
+			"image_url": "assets/img/projects/spamclassifier.jpg",
+			"title": "Spam Message Classifier",
+			"type": "Machine Learning/ Web Application",
+			"date": "18 Sep. 2018",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+		}
+	]
+}

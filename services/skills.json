@@ -1,0 +1,56 @@
+{
+   "title_json":"Skills",
+   "data":[
+      [
+         {
+            "icon":"bi bi-file-earmark-word-fill",
+            "title":"MS Offices",
+            "description":"I am knowledgeable of using MS WORD, MS PPTX, MS EXCEL, MS TEAMS etc.<br> Using MS Offices applications makes myself simple and productive"
+         },
+         {
+            "icon":"bi bi-display",
+            "title":"Frontend Development",
+            "description":"I am knowledgeable of using lists of frontend web framework design like Bootstrap and MaterializeCSS. <br>I can also do some event using Javascript native and even using Jquery"
+         },
+         {
+            "icon":"bi bi-file-earmark-code",
+            "title":"Backend Development",
+            "description":"I can also used PHP, Python and Javascript framework for backend development, like CI4, Flask and Nodejs etc. <br>I can also do some relational query for MYSQL and DMBS stuff for MongoDB. "
+         }
+      ],
+      [
+         {
+            "icon":"bi bi-binoculars",
+            "title":"Responsive Design",
+            "description":"Building a responsive web design for Mobile, Tablet and even for TV was tricky part but with the use of some CSS framework those tasks makes easy and clean."
+         },
+         {
+            "icon":"bi bi-brightness-high",
+            "title":"Graphic Design",
+            "description":"I have some experience of building image manipulation from Photoshop CS6 and use it as my partime job. Also I learned some Adobe applications like After Effects,  Animator and using their  own Media Encoder."
+         },
+         {
+            "icon":"bi bi-puzzle",
+            "title":"RESTful APIs",
+            "description":"I can used  (FETCH, AXIOS, AJAX, ROUTEROS) to fetch some data from the server to the client-side with  the use of APIs. I commonly used those APIs for fetching data from the server side without refreshing the  current webpage."
+         }
+      ],
+      [
+         {
+            "icon":"bi bi-wifi",
+            "title":"Networking",
+            "description":" I can used  (FETCH, AXIOS, AJAX, ROUTEROS) to fetch some data from the server to the client-side with the use of APIs. I commonly used those APIs for fetching data from the server side without refreshing the  current webpage."
+         },
+         {
+            "icon":"bi bi-dice-3",
+            "title":"Game Development",
+            "description":"sdfd"
+         },
+         {
+            "icon":"bi bi-percent",
+            "title":"Machine Learning",
+            "description":"sdfds"
+         }
+      ]
+   ]
+}

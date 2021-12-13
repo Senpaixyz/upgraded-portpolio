@@ -1,0 +1,20 @@
+{
+  "name": "portpolio",
+  "version": "1.0.0",
+  "description": "My portpolio",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Jheno S Cerbito",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "nodemon": "^2.0.14"
+  }
+}

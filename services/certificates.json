@@ -1,0 +1,14 @@
+{
+"title_json":"Certificates",
+"data": [
+		{
+			"image_url": "assets/img/projects/faceEmotion.jpg",
+			"title": "Cert. Attendee",
+			"type": "Attendance",
+			"text": "more information.......",
+			"date": "18 Sep. 2018",
+			"source": "DICT",
+			"logo": "assets/img/projects/faceEmotion.jpg"
+		}
+	]
+}
