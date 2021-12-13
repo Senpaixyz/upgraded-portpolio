@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('views'));
 app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs');
-const port = 5500;
+const port = process.env.PORT || 2525;
 
 
 app.get('/',(req,res)=>{
@@ -148,6 +148,6 @@ app.post('/send',async (req,res)=>{
   
 })
 
-app.listen(port,'0.0.0.0',()=>{
+app.listen(port,()=>{
     console.log("Listening on port: ", port);
 });
