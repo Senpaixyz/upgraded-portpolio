@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require("fs");
 const nodemailer = require('./api/nodemailer');
 const validator = require('email-validator');
-
+require('dotenv').config()
 
 const app = express();
 
@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.static('views'));
 app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs');
-const port = process.env.PORT || 2525;
+const port = process.env.PORT || 5500;
 
 
 app.get('/',(req,res)=>{
@@ -137,7 +137,6 @@ app.post('/send',async (req,res)=>{
               } else {
                   res.status(200).redirect(`/?success=true`)
                   console.log("Email sent successfully");
-                  console.log(data)
               }
           });
       }
