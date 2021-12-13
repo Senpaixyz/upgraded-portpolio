@@ -2,6 +2,8 @@ const express = require('express');
 const fs = require("fs");
 const nodemailer = require('./api/nodemailer');
 const validator = require('email-validator');
+const information = require('./services/information');
+const { json } = require('express/lib/response');
 require('dotenv').config()
 
 const app = express();
@@ -13,36 +15,20 @@ app.use(express.static('views'));
 app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs');
 const port = process.env.PORT || 5500;
-
+const module_references = information.references();
+const module_skills = information.skills();
 
 app.get('/',(req,res)=>{
-  fs.readFile("services/skills.json", "utf-8", (err, jsonString) => {
-        if (err) {
-          console.log("Error reading file from disk:", err);
-          return;
-        }
-        try {
-            const skill_data = JSON.parse(JSON.stringify(jsonString));
-            let skills = JSON.parse(skill_data);
-            fs.readFile("services/references.json", "utf-8", (err, refString) => {
-                    if (err) {
-                      console.log("Error reading file from disk:", err);
-                      return;
-                    }
-                    try {
-                      const ref_data = JSON.parse(JSON.stringify(refString));
-                      let references = JSON.parse(ref_data);
-                      res.render('index',{skills:skills,references:references});
-                    } 
-                    catch (err) {
-                      console.log("Error parsing References JSON string:", err);
-                    }   
-            });
-          } catch (err) {
-            console.log("Error parsing Skills JSON string:", err);
-          }
-    });
-   
+  const tmp = [];
+  const sk = JSON.parse(JSON.stringify(module_skills));
+  const ref = JSON.parse(JSON.stringify(module_references));
+  try {
+      const sk_tmp = JSON.parse(sk);
+      const ref_tmp = JSON.parse(ref);
+      res.render('index',{skills:sk_tmp,references:ref_tmp});
+  }catch (err) {
+          console.log("JSON File is empty or missing", err);
+  }
 });
 
 app.get('/fetch-projects',(req,res)=>{
