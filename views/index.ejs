@@ -265,15 +265,15 @@
   <script src="assets/js/download-pdf.js"></script>
 <script>
 
-  // window.onresize = ()=> {
-  //   let pagination_count = 3;
-  //   let ecert_total = 15;
-  //   let proj_total = 10;
-  //   if (window.matchMedia('screen and (max-width: 768px)').matches) {
-  //         pagination_count = 1;
-  //   }
-  //   paginate(pagination_count,ecert_total,proj_total);
-  // }
+  window.onresize = ()=> {
+    let pagination_count = 3;
+    let ecert_total = 15;
+    let proj_total = 10;
+    if (window.matchMedia('screen and (max-width: 768px)').matches) {
+          pagination_count = 1;
+    }
+    paginate(pagination_count,ecert_total,proj_total);
+  }
  $(function () {
    
        let pagination_count = 3;
@@ -287,87 +287,115 @@
   });
 
   function paginate(pagination_count,ecert_total,proj_total){
-        let container = $('#pagination');
-        container.pagination({
-            dataSource: '/fetch-projects',
-            locator: 'data',
-            totalNumber: proj_total,
-            pageSize:  pagination_count,
+        let project_paginate = new Promise((resolve,reject)=>{
+                  let container = $('#pagination');
+                  setTimeout(()=>{
+                            container.pagination({
+                              dataSource: '/fetch-projects',
+                              locator: 'data',
+                              totalNumber: proj_total,
+                              pageSize:  pagination_count,
 
-            callback: function (obj, pagination) {
-              let dataHtml = ``;
-              $.each(obj, function (index, item) {
-                    dataHtml += `
-                                    <div class="col-md-4">
-                                      <div class="work-box">
-                                        <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                          <div class="work-img">
-                                            <img src="`+item.image_url+`" alt="`+item.title+`" class="img-fluid">
-                                          </div>
-                                        </a>
-                                        <div class="work-content">
-                                          <div class="row">
-                                            <div class="col-sm-8">
-                                              <h2 class="w-title">`+item.title+`</h2>
-                                              <div class="w-more">
-                                                <span class="w-ctegory">`+item.type+`</span> <br><span class="w-date">-`+item.lang+`</span>
-                                              </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <a class="btn btn-dark" href="`+item.url+`" target="_blank">`+item.btn+`</a>
-                                            </div>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>`;
-                });
-                $('#data-container').html(dataHtml);
-            }
+                              callback: function (obj, pagination) {
+                                let dataHtml = ``;
+                                $.each(obj, function (index, item) {
+                                      dataHtml += `
+                                                      <div class="col-md-4">
+                                                        <div class="work-box">
+                                                          <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                                            <div class="work-img">
+                                                              <img src="`+item.image_url+`" alt="`+item.title+`" class="img-fluid">
+                                                            </div>
+                                                          </a>
+                                                          <div class="work-content">
+                                                            <div class="row">
+                                                              <div class="col-sm-8">
+                                                                <h2 class="w-title">`+item.title+`</h2>
+                                                                <div class="w-more">
+                                                                  <span class="w-ctegory">`+item.type+`</span> <br><span class="w-date">-`+item.lang+`</span>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-4">
+                                                                  <a class="btn btn-dark" href="`+item.url+`" target="_blank">`+item.btn+`</a>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>`;
+                                  });
+                                  $('#data-container').html(dataHtml);
+                              }
+                          })
+                        resolve();
+                        }
+                          
+                  ,1000);
+                
+                  
         });
-        let cert_pagination =  $('#cert-pagination');
-        cert_pagination.pagination({
-            dataSource: '/fetch-certificates',
-            locator: 'data',
-            totalNumber: ecert_total,
-            pageSize: pagination_count,
-            callback: function (obj, pagination) {
-              let dataHtml = ``;
-              $.each(obj, function (index, item) {
-                    dataHtml += `
-                              <div class="col-md-4">
-                                <div class="card card-blog">
-                                  <div class="card-img">
-                                    <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                      <div class="work-img bg-light">
-                                        <iframe src="`+item.image_url+`" frameborder="0" height="280px" width="100%" style="background:white;" allow="autoplay"></iframe>
-                                      </div>
-                                    </a>
-                                  </div>
-                                  <div class="card-body">
-                                    <div class="card-category-box">
-                                      <div class="card-category">
-                                        <h6 class="category">`+item.type+`</h6>
-                                      </div>
-                                    </div>
-                                    <h3 class="card-title"><a href="blog-single.html">`+item.title+`</a></h3>
-                                  </div>
-                                  <div class="card-footer">
-                                    <div class="post-author">
-                                      <a href="#">
-                                        <img src="`+item.logo+`" alt="" class="avatar rounded-circle">
-                                        <span class="author">`+item.source+`</span>
-                                      </a>
-                                    </div>
-                                    <div class="post-date">
-                                      <span class="bi bi-clock"></span>`+item.date+`
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                    `;
-                });
-                $('#cert-container').html(dataHtml);
-            }
+        project_paginate.then(()=>{
+          let cert_pagination_promise = new Promise((resolve,reject)=>{
+                let cert_pagination =  $('#cert-pagination');
+                setTimeout(()=>{
+                                cert_pagination.pagination({
+                                    dataSource: '/fetch-certificates',
+                                    locator: 'data',
+                                    totalNumber: ecert_total,
+                                    pageSize: pagination_count,
+                                    callback: function (obj, pagination) {
+                                      let dataHtml = ``;
+                                      $.each(obj, function (index, item) {
+                                            dataHtml += `
+                                                      <div class="col-md-4">
+                                                        <div class="card card-blog">
+                                                          <div class="card-img">
+                                                            <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                                              <div class="work-img bg-light">
+                                                                <iframe src="`+item.image_url+`" frameborder="0" height="280px" width="100%" style="background:white;" allow="autoplay"></iframe>
+                                                              </div>
+                                                            </a>
+                                                          </div>
+                                                          <div class="card-body">
+                                                            <div class="card-category-box">
+                                                              <div class="card-category">
+                                                                <h6 class="category">`+item.type+`</h6>
+                                                              </div>
+                                                            </div>
+                                                            <h3 class="card-title"><a href="blog-single.html">`+item.title+`</a></h3>
+                                                          </div>
+                                                          <div class="card-footer">
+                                                            <div class="post-author">
+                                                              <a href="#">
+                                                                <img src="`+item.logo+`" alt="" class="avatar rounded-circle">
+                                                                <span class="author">`+item.source+`</span>
+                                                              </a>
+                                                            </div>
+                                                            <div class="post-date">
+                                                              <span class="bi bi-clock"></span>`+item.date+`
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                            `;
+                                        });
+                                        $('#cert-container').html(dataHtml);
+                                    }
+                                })
+                              resolve();
+                              }
+                              
+                ,1000)
+
+               
+          });
+          cert_pagination_promise.then(()=>{
+            console.log("Success fetching e-cert");
+          }).catch((err)=>{
+          console.log("Theres something wrong fetching e-cert");
+        });
+
+        }).catch((err)=>{
+          console.log("Theres something wrong fetching projects");
         });
   }
 
