@@ -1,8 +1,8 @@
 const fs = require("fs");
 
 
-const references  = ()=>{
-    let data = fs.readFileSync("./services/references.json", "utf-8");
+const work_exp  = ()=>{
+    let data = fs.readFileSync("./services/work-experienced.json", "utf-8");
     return data;
 };
 
@@ -11,4 +11,4 @@ const skills  =  ()=>{
     return data;
 };
 
-module.exports = {references,skills};
+module.exports = {work_exp,skills};

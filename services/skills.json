@@ -5,51 +5,51 @@
          {
             "icon":"bi bi-file-earmark-word-fill",
             "title":"MS Offices",
-            "description":"I am knowledgeable of using MS WORD, MS PPTX, MS EXCEL, MS TEAMS etc.<br> Using MS Offices applications makes myself simple and productive"
+            "description":"MS WORD, MS PPTX, MS EXCEL, MS TEAMS, and other programs are familiar to me. Using Microsoft Office programs makes my life easier and more productive."
          },
          {
             "icon":"bi bi-display",
             "title":"Frontend Development",
-            "description":"I am knowledgeable of using lists of frontend web framework design like Bootstrap and MaterializeCSS. <br>I can also do some event using Javascript native and even using Jquery"
+            "description":"I'm familiar with a variety of frontend web frameworks, including Bootstrap and MaterializeCSS. I can also use native Javascript and Jquery to create some events."
          },
          {
             "icon":"bi bi-file-earmark-code",
             "title":"Backend Development",
-            "description":"I can also used PHP, Python and Javascript framework for backend development, like CI4, Flask and Nodejs etc. <br>I can also do some relational query for MYSQL and DMBS stuff for MongoDB. "
+            "description":"I can also do some relational querying for MYSQL and DMBS stuff for MongoDB using PHP, Python, and Javascript frameworks like CI4, Flask, and Nodejs, among others."
          }
       ],
       [
          {
             "icon":"bi bi-binoculars",
             "title":"Responsive Design",
-            "description":"Building a responsive web design for Mobile, Tablet and even for TV was tricky part but with the use of some CSS framework those tasks makes easy and clean."
+            "description":"Building an adaptable web design for mobile, tablet, and even television was a difficult effort, but with the help of various CSS frameworks, it became simple and painless."
          },
          {
             "icon":"bi bi-brightness-high",
             "title":"Graphic Design",
-            "description":"I have some experience of building image manipulation from Photoshop CS6 and use it as my partime job. Also I learned some Adobe applications like After Effects,  Animator and using their  own Media Encoder."
+            "description":"I use Photoshop CS6 as my part-time profession and have some skill with image alteration. I additionally learned how to use Adobe products such as After Effects, Animator, and their own Media Encoder."
          },
          {
             "icon":"bi bi-puzzle",
             "title":"RESTful APIs",
-            "description":"I can used  (FETCH, AXIOS, AJAX, ROUTEROS) to fetch some data from the server to the client-side with  the use of APIs. I commonly used those APIs for fetching data from the server side without refreshing the  current webpage."
+            "description":"FETCH, AXIOS, AJAX, and ROUTEROS are some of the APIs I can use to fetch data from the server to the client-side. Those APIs were frequently used by me to fetch data from the server without having to refresh the current webpage."
          }
       ],
       [
          {
             "icon":"bi bi-wifi",
             "title":"Networking",
-            "description":" I can used  (FETCH, AXIOS, AJAX, ROUTEROS) to fetch some data from the server to the client-side with the use of APIs. I commonly used those APIs for fetching data from the server side without refreshing the  current webpage."
+            "description": "My networking interest is to establish the Pisowifi business as a source of passive income while I study at home. I had some knowledge of how networks function, how Mikrotik devices manipulate network traffic, how to prevent adverts and harmful websites, and how to set some restrictions."
          },
          {
             "icon":"bi bi-dice-3",
-            "title":"Game Development",
-            "description":"sdfd"
+            "title":"Game Developments",
+            "description":"When it comes to game development, my professor teaches us how to use a game engine to create a game with physics. I create good games utilizing the Godot Game Engine, which can be played on Windows and Android devices."
          },
          {
             "icon":"bi bi-percent",
             "title":"Machine Learning",
-            "description":"sdfds"
+            "description":"I also have some experience building machine learning models with Python libraries such as Pytorch, Keras, and Tensorflow, which are often used for deep learning. Using such technologies, I can create AI that predicts the conclusion of a specific topic based on scientific evidence and a legitimate model."
          }
       ]
    ]

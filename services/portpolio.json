@@ -2,60 +2,84 @@
 "title_json":"Projects",
 "data": [
 		{
-			"image_url": "assets/img/projects/faceEmotion.jpg",
+			"image_url": "https://github.com/Senpaixyz/faceEmotion-classifier/blob/master/images/landing%20page.PNG?raw=true",
 			"title": "Face Emotion Classifier",
 			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"lang": "Python3/Flask/CNN",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/fakenews.jpg",
+			"image_url": "https://raw.githubusercontent.com/Senpaixyz/FakeNewsClassifier/master/images/landingpage.PNG?raw=true",
 			"title": "Fake News Classifier",
 			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"lang": "Python3/Flask/Naive Bayes",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/moviereview.jpg",
+			"image_url": "https://github.com/Senpaixyz/Movie-Review-Classifier-Web-Application/blob/master/images/negative.PNG?raw=true",
 			"title": "Movie Review Classifier",
 			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"lang": "Python3/Flask/RNN/LSTM",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/spamclassifier.jpg",
+			"image_url": "https://github.com/Senpaixyz/Spam-Message-Classifier/blob/master/images/spam.PNG?raw=true",
 			"title": "Spam Message Classifier",
 			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"lang": "Python3/Flask/Naive Bayes",
+			"url": "https://github.com/Senpaixyz/faceEmotion-classifier",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/faceEmotion.jpg",
-			"title": "Face Emotion Classifier",
+			"image_url": "https://raw.githubusercontent.com/Senpaixyz/flask-linear-regression/master/images/capture.PNG?raw=true",
+			"title": "Insurances Charges Price Prediction",
 			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"lang": "Python3/Flask/Linear Regression",
+			"url": "https://github.com/Senpaixyz/flask_multiple_linear",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/fakenews.jpg",
-			"title": "Fake News Classifier",
-			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"image_url": "https://github.com/Senpaixyz/youtube-converter/blob/master/images/index.JPG?raw=true",
+			"title": "Youtube to MP3/MP4 Converter",
+			"type": "API/ Web Application",
+			"lang": "NodeJS/API/FETCH",
+			"url": "https://github.com/Senpaixyz/youtube-converter",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/moviereview.jpg",
-			"title": "Movie Review Classifier",
-			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"image_url": "https://github.com/Senpaixyz/Godot-PneumonicEater/blob/master/screenshots/image1.png?raw=true",
+			"title": "Pneumonic Eater",
+			"type": "Windows/Android Game",
+			"lang": "Gdscript/JSON/API",
+			"url": "https://github.com/Senpaixyz/Godot-PneumonicEater",
+			"btn": "Source"
 		},
 		{
-			"image_url": "assets/img/projects/spamclassifier.jpg",
-			"title": "Spam Message Classifier",
-			"type": "Machine Learning/ Web Application",
-			"date": "18 Sep. 2018",
-			"url": "https://github.com/Senpaixyz/faceEmotion-classifier"
+			"image_url": "https://github.com/Senpaixyz/Godot-RollingDice/blob/master/screenshots/intro.jpg?raw=true",
+			"title": "Rolling Dice",
+			"type": "Windows/Android Game",
+			"lang": "Gdscript/JSON/API",
+			"url": "https://github.com/Senpaixyz/Godot-RollingDice",
+			"btn": "Source"
+		},
+		{
+			"image_url": "assets/img/projects/img1.png",
+			"title": "School Admission System",
+			"type": "Website/Management System",
+			"lang": "PHP/JavaScript/CSS/Bootstrap4",
+			"url": "javascript:void(0)",
+			"btn": "Private"
+		},
+		{
+			"image_url": "assets/img/projects/classrecord.png",
+			"title": "Classrecord Management System",
+			"type": "Website/Management System",
+			"lang": "PHP/JavaScript/CSS/Bootstrap4",
+			"url": "javascript:void(0)",
+			"btn": "Private"
 		}
 	]
 }

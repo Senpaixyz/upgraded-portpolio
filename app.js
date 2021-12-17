@@ -4,30 +4,29 @@ const nodemailer = require('./api/nodemailer');
 const validator = require('email-validator');
 const information = require('./services/information');
 const { json } = require('express/lib/response');
-require('dotenv').config()
 
 const app = express();
+require('dotenv').config()
 
 /* MIDDLE WARE */
-
 app.use(express.json());
 app.use(express.static('views'));
 app.use(express.urlencoded({extended:true}));
 app.set('view engine','ejs');
 const port = process.env.PORT || 5500;
-const module_references = information.references();
+const module_work = information.work_exp();
 const module_skills = information.skills();
 
 app.get('/',(req,res)=>{
   const tmp = [];
   const sk = JSON.parse(JSON.stringify(module_skills));
-  const ref = JSON.parse(JSON.stringify(module_references));
+  const work = JSON.parse(JSON.stringify(module_work));
   try {
       const sk_tmp = JSON.parse(sk);
-      const ref_tmp = JSON.parse(ref);
-      res.render('index',{skills:sk_tmp,references:ref_tmp});
+      const work_tmp = JSON.parse(work);
+      res.render('index',{skills:sk_tmp,work:work_tmp});
   }catch (err) {
-          console.log("JSON File is empty or missing", err);
+          console.log("ERROR WARNING", err);
   }
 });
 
@@ -79,6 +78,9 @@ app.get('/fetch-certificates',(req,res)=>{
                 starting_point += 1
             }
           });
+          res.setHeader("Content-Security-Policy","child-src https://ogs.google.com/; frame-ancestors https://drive.google.com;");
+          res.setHeader("Strict-Transport-Security","max-age=86400");
+          res.setHeader("X-Frame-Options","DENY");
           res.status(200).send(pageArray)
         } catch (err) {
           console.log("Error parsing JSON string:", err);
@@ -86,12 +88,34 @@ app.get('/fetch-certificates',(req,res)=>{
     });
 });
 
-
+app.get('/:data', (req,res)=>{
+  const params = req.params.data;
+  const work = JSON.parse(JSON.stringify(module_work));
+  const work_tmp = JSON.parse(work);
+  work_tmp.data.forEach((values,idx)=>{
+      if(values.project_path==params){
+        let tmp = work_tmp.data[idx];
+        res.render('portfolio-details',{info:tmp});
+      }
+  });
+});
 app.post('/send',async (req,res)=>{
   const {name,email,subject,message} = req.body;
   const regex = /\d/; // has number in name
-  const validEmail = validator.validate(email);
-  const invalidName = regex.test(name);
+  let validEmail=true;
+  let invalidName=false;
+  if(email.length>0){
+    validEmail = validator.validate(email);
+  }
+  else{
+      email = "Anonymous@gmail.com";
+  }
+  if(name.length>0){
+      invalidName = regex.test(name);
+  }
+  else{
+      name = "Anonymous";
+  }
   if(!validEmail || invalidName){
       res.status(200).redirect(`/?success=false`)
   }
@@ -131,7 +155,9 @@ app.post('/send',async (req,res)=>{
       }
   }
   
-})
+});
+
+
 
 app.listen(port,()=>{
     console.log("Listening on port: ", port);

@@ -1,0 +1,32 @@
+{
+   "title_json":"Work Experienced",
+   "data":[
+      {
+         "project_name":"Anomaly Detection System",
+         "project_path":"ads",
+         "category":"Machine Learning/Web Application",
+         "company_name":"Elerock",
+         "company_favicon":"assets/img/testimonial-2.jpg",
+         "project_date":"October 18. 2021",
+         "project_url":"https://www.comdfdsf",
+         "overview":"It was a concerning development that he couldn't get out of his mind. He'd had many friends throughout his early years and had fond memories of playing with them, but he couldn't understand how it had all stopped. There was some point as he grew up that he played with each of his friends for the very last time, and he had no idea that it would be the last.",
+         "images":[
+            {
+               "path":"assets/img/portfolio-details-1.jpg",
+               "alt":"IMAGE 1"
+            },
+            {
+               "path":"assets/img/post-2.jpg",
+               "alt":"IMAGE 2"
+            },
+            {
+               "path":"assets/img/post-3.jpg",
+               "alt":"IMAGE 2"
+            }
+         ],
+         "languages":"Python/Javascript/HTML5",
+         "role":"Programmer",
+		 "type": "Internship"
+      }
+   ]
+}

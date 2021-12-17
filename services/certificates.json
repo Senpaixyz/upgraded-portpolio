@@ -2,13 +2,108 @@
 "title_json":"Certificates",
 "data": [
 		{
-			"image_url": "assets/img/projects/faceEmotion.jpg",
-			"title": "Cert. Attendee",
-			"type": "Attendance",
-			"text": "more information.......",
-			"date": "18 Sep. 2018",
+			"image_url": "https://drive.google.com/file/d/1zP2KjDvdc82ZvTBFofIJ5ZYLQlZXlGd2/preview",
+			"title": "Programming for Beginners Using Python",
+			"type": "Completion",
+			"date": "25 Nov 2021",
 			"source": "DICT",
+			"logo": "https://dict.gov.ph/wp-content/uploads/2017/02/DICT-Logo-Final.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1YuVL34j9leGXtoXK_FGaIYOOFfUUTSjo/preview",
+			"title": "Autoencoder - PSITE-CAR General Assembly",
+			"type": "Appreciation",
+			"date": "05 June 2021",
+			"source": "PSITE",
+			"logo": "https://scontent.fmnl17-2.fna.fbcdn.net/v/t1.6435-9/69961198_725488681226561_8504599712156876800_n.png?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFVnLgFSebXAAsG8nNc84M1af7UQ0Mf4bhp_tRDQx_huEn91IOXTzReSGAUdHLnFT2C-LJdqN0A_xVdsosfBvh6&_nc_ohc=TjbXUtzLLn4AX8LftF0&tn=C-ueVPmMEhYVtb_N&_nc_ht=scontent.fmnl17-2.fna&oh=00_AT_IIxSanvxmkCaoKWs05LuWCMYEgYAoGZUIHsyTjGaJug&oe=61DE8182"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1mcRXYEdwdHZ-4cNA5nUHDLgjO0_YxRky/preview",
+			"title": "Introduction to CyberSecurity",
+			"type": "Achievement",
+			"date": "06 April 2021",
+			"source": "CISCO",
+			"logo": "https://moorinsightsstrategy.com/wp-content/uploads/2020/05/Cisco-logo.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1YiCZ4iU8tPzvLtutddDjvljI62c0Ni6o/preview",
+			"title": "Full Stack PHP Developer",
+			"type": "Achievement",
+			"date": "17 May 2021",
+			"source": "PHP Bootcamp",
 			"logo": "assets/img/projects/faceEmotion.jpg"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1DplR5F7EC2o-EocSYvxXid5h0X8DU8lw/preview",
+			"title": "Data Science Topics for High School and College Research Projects",
+			"type": "Participation",
+			"date": "3 April 2021",
+			"source": "FSH",
+			"logo": "https://images.squarespace-cdn.com/content/v1/5f02d28f35d64d2a5022eeb1/1600042996397-J6QGEF9MHGV1MZT0PQHI/scihub_BLOGS.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1h0cCpvmB--6RNR1xWlUPEeUFsmN5LlQ3/preview",
+			"title": "KISMET: Emerging Tool of Augmented Reality in Education",
+			"type": "Appreciation",
+			"date": "5 April 2021",
+			"source": "PCI-Tech",
+			"logo": "https://pci-tech.s3-ap-southeast-1.amazonaws.com/local-dev/assets/HUB+2.svg"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1UliHMZ6D-5lTrnLqjyS4Cs5_0zjtIR1T/preview",
+			"title": "DIGITAL TRANSFORMATIVE TECHNOLOGIES TRAINING",
+			"type": "Attendance",
+			"date": "12-16 April 2021",
+			"source": "DICT",
+			"logo": "https://dict.gov.ph/wp-content/uploads/2017/02/DICT-Logo-Final.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1F_cVkAtKTTUgrx3dMvo2GvCGD0yF9e3o/preview",
+			"title": "Emergin Trends in Information Technology: Wordpress Essentials",
+			"type": "Participation",
+			"date": "16 June 2021",
+			"source": "PUP",
+			"logo": "https://www.pup.edu.ph/resources/images/logo.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1L1YGhCzXwtP6As8Q7zLq2zA1TxEuOgQR/preview",
+			"title": "HTML&CSS - Certificates Course for Beginner",
+			"type": "Completion",
+			"date": "30 March 2021",
+			"source": "YouAccel",
+			"logo": "https://scontent.fmnl17-4.fna.fbcdn.net/v/t39.30808-6/242103750_4326177867458988_2797798145165742350_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeHcKYxBeezFfbZT4Tsq5eQMbHQOhSwRQ3JsdA6FLBFDcva_AXCCFBx1xixhrs1sWTXMYkyv0oJtfYNGncPADuBN&_nc_ohc=ofRh8VX568wAX-GjgUt&_nc_ht=scontent.fmnl17-4.fna&oh=00_AT-ItXRyNRyfqHljgBjN3PhbHayxHYQg0za8w49-vAcqgA&oe=61BF65BD"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1e9FN5glL1gecmV1e6E0VqD5FjclcvtbW/preview",
+			"title": "Integrated Southern Tagalog Association of Information Technology Education (iSITE)",
+			"type": "Membership",
+			"date": "1 August. 2021",
+			"source": "iSITE",
+			"logo": "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/ju3rijsyqy1ym1ribc9g"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1JRQz2x7n66ro2df6Rk1ItM2-VhZ8FPc2/preview",
+			"title": "Best Practices in Writing and Publishing Your Research Paper",
+			"type": "Attendance",
+			"date": "16 April. 2021",
+			"source": "Elsevier",
+			"logo": "https://www.elsevier.com/__data/assets/image/0010/1054639/ELSLogoOrangeCounter.jpg"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1sfgwoTvBpsZl2wkKLfIlmt3eLyfRoQKn/preview",
+			"title": "Graphics Design Tips and Tricks using Photoshop",
+			"type": "Participation",
+			"date": "04 April. 2021",
+			"source": "Trimex College",
+			"logo": "https://trimexcolleges.edu.ph/public/logo/trimex_logo.png"
+		},
+		{
+			"image_url": "https://drive.google.com/file/d/1TblbeOOzzJ6ETDFlyZN2WoQyUvF0sXAr/preview",
+			"title": "Javascript HTML DOM (Create Webpages using Javascript)",
+			"type": "Attendance",
+			"date": "16 April. 2021",
+			"source": "Filta",
+			"logo": "https://scontent.fmnl17-2.fna.fbcdn.net/v/t39.30808-6/244188946_253561763446075_4025988488939829420_n.png?_nc_cat=109&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeG_ZxQZM8ts4NcDIcu3lN132VpJ6ZS3rGfZWknplLesZyesF-Vb4_WPwOd5THQ_NuSEhtuWR8WILCs_ETe7lO29&_nc_ohc=ssXtzck36QcAX-jPn_0&_nc_ht=scontent.fmnl17-2.fna&oh=00_AT8M85KL8TqWeNoHmuPxPJt9Xw5zBCHgxE5nMv_vuaa4pQ&oe=61BE1D88"
 		}
 	]
 }

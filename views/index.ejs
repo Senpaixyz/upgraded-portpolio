@@ -1,47 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <title>JhiCer- TECH</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paginationjs/2.1.4/pagination.css"/>
-  <!-- Vendor CSS Files -->
-  <link type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/toaststr/toastr.min.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link type="text/css" href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/css/pagination.pager.css" rel="stylesheet">
-  <!-- =======================================================
-  * Template Name: DevFolio - v4.6.0
-  * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
+<%- include('templates/header'); -%>
 <body>
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">JhiCer@TECH</a></h1>
+      <h3 class="logo"><a href="/">JHI<span class="text-danger">CER</span></a></h3>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -50,9 +14,8 @@
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About Me</a></li>
           <li><a class="nav-link scrollto" href="#proficiency">Tech</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+          <li><a class="nav-link scrollto " href="#work">Projects</a></li>
           <li><a class="nav-link scrollto " href="#e-cert">E-cert</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -67,9 +30,9 @@
       <div class="table-cell">
         <div class="container">
           <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">YOU CAN CALL ME JHENO</h1>
-          <p class="hero-subtitle"><span class="typed" data-typed-items="-Designer, -Developer, -Freelancer, -Photographer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <h1 class="hero-title mb-4"><span class="text-warning">&lt;/</span>Hi! Visitor<span class="text-warning">&#62;</span></h1>
+          <p class="hero-subtitle mb-4"><span class="typed" data-typed-items="<b class='text-warning'>$</b>{Designer}, <b class='text-warning'>$</b>{Developer}, <b class='text-warning'>$</b>{Freelancer}"></span></p>
+          <p class="pt-3"><a class="btn btn-danger px-4 scrollto" href="#contact" role="button">CONTACT ME</a></p> 
         </div>
       </div>
     </div>
@@ -86,47 +49,18 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="row ">
-                    <div class="col-sm-12 col-md-5 ">
+                    <div class="col-sm-12 col-md-12 ">
                       <div class="about-img">
-                        <img src="assets/img/me/ID.jpg" class="img-fluid rounded b-shadow-a mx-auto d-block" alt="">
+                        <img src="assets/img/me/ID.jpg" class="img-fluid rounded b-shadow-a mx-auto d-block w-50" alt="">
                       </div>
                     </div>
-                    <div class="col-sm-12 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Jheno S Cerbito</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Developer/Programmer</span></p>
-                        <p><span class="title-s">Email: </span> <span>jhicer@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>+639480258562</span></p>
+                    <div class="col-sm-12 col-md-12">
+                      <div class="about-info text-center">
+                        <h3>Jheno Silleza Cerbito</h3>
+                        <div class="line-mf"></div>
+                        <p class="subtitle-a">Aspiring Developer/Programmer</p>
                       </div>
                     </div>
-                  </div>
-                  <div class="skill-mf">
-                    <h5 style="color:#173b6c;font-weight:bold;">Educational Background</h5>
-                          <i class="icofont-rounded-right"></i> 
-                          <strong>Bachelor of Science in Computer Science <span class="text-secondary"> 2020-Present </span></strong>
-                          <br>
-                          <small class="ml-5 text-secondary">Saint Michaels College of Laguna</small>
-                          <br>
-                        <i class="icofont-rounded-right"></i> 
-                          <strong>Associate in Computer Studies <span class="text-secondary"> 2018 - 2020</span></strong>
-                          <br>
-                          <small class="ml-4 text-secondary">Saint Michaels College of Laguna</small>
-                          <br>
-                        <i class="icofont-rounded-right"></i> 
-                          <strong>Grade 11 to Grade 12 <span class="text-secondary"> 2016 - 2018</span></strong>
-                          <br>
-                          <small class="ml-4 text-secondary">Binan City Senior High School San Antonio Campus</small>
-                          <br>
-                        <i class="icofont-rounded-right"></i> 
-                          <strong>Grade 7 to Grade 10 <span class="text-secondary"> 2012 - 2016</span></strong>
-                          <br>
-                          <small class="ml-4 text-secondary">Binan City Intergrated National High School</small>
-                          <br>
-                        <i class="icofont-rounded-right"></i> 
-                          <strong>Grade 1 to Grade 6 <span class="text-secondary"> 2006 - 2012</span></strong>
-                          <br>
-                          <small class="ml-4 text-secondary">Malaban Elementary School</small>
-                          <hr>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -141,14 +75,12 @@
                     </p>
                     <p class="lead">
                       <blockquote class="blockquote mb-5">
-                        <p class="mb-0">Hard-working programmer with clear communication and active listening skills. 
-                          Seeking for the internship to improve exceptional programming skills, 
-                          implementing accurate solutions for some bugs, and increase company efficiency at the same time</p>
+                        <p class="mb-0">Hardworking coder who can communicate clearly and actively listen. I'm looking for an job to help me enhance my programming skills, implement precise bug fixes, and raise corporate efficiency all at the same time.</p>
                         <p class="blockquote-footer mt-5 mb-5">Cited <cite title="Source Title">Jheno S. Cerbito</cite></p>
                       </blockquote>
                     </p>
-                    <p class="lead">
-                      <button class="btn btn-lg btn-success d-block mx-auto">Download CV</button>
+                    <p class="lead text-center">
+                      <a class="btn btn-dark  scrollto" href="#contact">Request CV</a>
                     </p>
                   </div>
                 </div>
@@ -169,7 +101,7 @@
                 Tech. Proficiency
               </h3>
               <p class="subtitle-a">
-                My technologies proficiency was listed below
+                The following is a list of my technological abilities.
               </p>
               <div class="line-mf"></div>
             </div>
@@ -213,7 +145,7 @@
     </section><!-- End Services Section -->
 
     <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
       <div class="container position-relative">
       </div>
     </div><!-- End Counter Section -->
@@ -225,10 +157,10 @@
           <div class="col-sm-12">
             <div class="title-box text-center">
               <h3 class="title-a">
-                Portfolio
+                Projects
               </h3>
               <p class="subtitle-a">
-                List of my own projects
+                The following is a list of previous projects that I've worked on.
               </p>
               <div class="line-mf"></div>
             </div>
@@ -245,24 +177,26 @@
     </section><!-- End Portfolio Section -->
 
     <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/overlay-bg.jpg)">
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/work-bg.jpg)">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
 
-            <div class="testimonials-slider swiper swiper-references" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
               <div class="swiper-wrapper">
-                <% references.data.forEach(function(ref){ %>
+                <% work.data.forEach(function(data){ %>
                     <div class="swiper-slide">
                       <div class="testimonial-box">
                         <div class="author-test">
-                          <img src="<%= ref.image_path %>" alt="" class="rounded-circle b-shadow-a">
-                          <span class="author"><%= ref.name %></span>
+                          <img src="<%= data.company_favicon %>" alt="" class="rounded-circle b-shadow-a">
+                          <span class="author"><%= data.company_name %></span>
                         </div>
                         <div class="content-test">
                           <p class="description lead">
-                            <%= ref.testimony %>
+                            <%= data.overview %>
                           </p>
+                          <hr>
+                          <a href='/<%= data.project_path%>' class="btn btn-primary text-light">View More</a>
                         </div>
                       </div>
                     </div><!-- End testimonial item -->
@@ -289,7 +223,7 @@
                 Certificates
               </h3>
               <p class="subtitle-a">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                The credentials below show my previous accomplishments from webinars, online courses, and other events.
               </p>
               <div class="line-mf"></div>
             </div>
@@ -306,25 +240,7 @@
     </section><!-- End Blog Section -->
     <%- include('forms/contact'); -%>
   </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <div class="credits">
-              JHICER@TECH
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer><!-- End  Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
+  <%- include('templates/footer'); -%>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -346,45 +262,44 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/pagination.min.js"></script>
   <script src="assets/js/email-message.js"></script>
+  <script src="assets/js/download-pdf.js"></script>
 <script>
 
   window.onresize = ()=> {
     let pagination_count = 3;
-    let pagination_total = 8;
+    let ecert_total = 15;
+    let proj_total = 10;
     if (window.matchMedia('screen and (max-width: 768px)').matches) {
           pagination_count = 1;
-          pagination_total = 4;
-          paginate(pagination_count,pagination_total);
+          paginate(pagination_count,ecert_total,proj_total);
     }
-    paginate(pagination_count,pagination_total);
+    paginate(pagination_count,ecert_total,proj_total);
   }
  $(function () {
    
        let pagination_count = 3;
-       let pagination_total = 8;
+       let ecert_total = 15;
+       let proj_total = 10;
        if (window.matchMedia('screen and (max-width: 768px)').matches) {
           pagination_count = 1;
-          pagination_total = 4;
        }
-       paginate(pagination_count,pagination_total);
+       paginate(pagination_count,ecert_total,proj_total);
 
   });
 
-  function paginate(pagination_count,pagination_total){
+  function paginate(pagination_count,ecert_total,proj_total){
         let container = $('#pagination');
         let cert_pagination =  $('#cert-pagination');
         container.pagination({
             dataSource: '/fetch-projects',
             locator: 'data',
-            totalNumber: pagination_total,
+            totalNumber: proj_total,
             pageSize:  pagination_count,
             hideWhenLessThanOnePage: true,
 
             callback: function (obj, pagination) {
               var dataHtml = ``;
-              console.log(pagination)
               $.each(obj, function (index, item) {
-                    console.log(item);
                     dataHtml += `
                                     <div class="col-md-4">
                                       <div class="work-box">
@@ -398,11 +313,11 @@
                                             <div class="col-sm-8">
                                               <h2 class="w-title">`+item.title+`</h2>
                                               <div class="w-more">
-                                                <span class="w-ctegory">Machine Learning/ Web Application</span> <br><span class="w-date">`+item.date+`</span>
+                                                <span class="w-ctegory">`+item.type+`</span> <br><span class="w-date">-`+item.lang+`</span>
                                               </div>
                                             </div>
                                             <div class="col-sm-4">
-                                                <a class="btn btn-success" href="`+item.url+`">Info</a>
+                                                <a class="btn btn-dark" href="`+item.url+`" target="_blank">`+item.btn+`</a>
                                             </div>
                                           </div>
                                         </div>
@@ -416,7 +331,7 @@
         cert_pagination.pagination({
             dataSource: '/fetch-certificates',
             locator: 'data',
-            totalNumber: pagination_total,
+            totalNumber: ecert_total,
             pageSize: pagination_count,
             hideWhenLessThanOnePage: true,
             callback: function (obj, pagination) {
@@ -427,8 +342,8 @@
                                 <div class="card card-blog">
                                   <div class="card-img">
                                     <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                                      <div class="work-img">
-                                        <img src=" `+item.image_url+`" alt="`+item.title+`" class="img-fluid">
+                                      <div class="work-img bg-light">
+                                        <iframe src="`+item.image_url+`" frameborder="0" height="280px" width="100%" style="background:white;" allow="autoplay"></iframe>
                                       </div>
                                     </a>
                                   </div>
@@ -439,9 +354,6 @@
                                       </div>
                                     </div>
                                     <h3 class="card-title"><a href="blog-single.html">`+item.title+`</a></h3>
-                                    <p class="card-description">
-                                      `+item.text+`
-                                    </p>
                                   </div>
                                   <div class="card-footer">
                                     <div class="post-author">
