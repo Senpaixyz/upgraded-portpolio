@@ -6,22 +6,40 @@
          "project_path":"ads",
          "category":"Machine Learning/Web Application",
          "company_name":"Elerock",
-         "company_favicon":"assets/img/testimonial-2.jpg",
+         "company_favicon":"assets/img/intern/exp1/poseidon-logo-small.jpg",
+		 "company_website": "https://elecrock.com/",
+		 "company_overview":"The heart of Elecrock is our unique Test and Learn Culture focused on generating innovative ideas and equips you with the practices, technologies and expertise to rapidly turn those ideas into business value.",
          "project_date":"October 18. 2021",
-         "project_url":"https://www.comdfdsf",
-         "overview":"It was a concerning development that he couldn't get out of his mind. He'd had many friends throughout his early years and had fond memories of playing with them, but he couldn't understand how it had all stopped. There was some point as he grew up that he played with each of his friends for the very last time, and he had no idea that it would be the last.",
+		 "project_url": "https://elecrock.com/using-flask-and-knn-for-realtime-anomaly-detection/",
+         "overview":"KNN algorithm is a type of supervised machine learning algorithm that predicts the possible label base from its nearest neighbor. The algorithm works by detecting the outliers, it is the task of identifying observations that may be considered as anomalous based on the given supervised network packets. ",
          "images":[
             {
-               "path":"assets/img/portfolio-details-1.jpg",
-               "alt":"IMAGE 1"
+               "path":"assets/img/intern/exp1/meeting1.JPG",
+               "alt":"Company Online Meeting"
             },
             {
-               "path":"assets/img/post-2.jpg",
-               "alt":"IMAGE 2"
+               "path":"assets/img/intern/exp1/meeting2.JPG",
+               "alt":"Company Online Meeting"
             },
             {
-               "path":"assets/img/post-3.jpg",
-               "alt":"IMAGE 2"
+               "path":"assets/img/intern/exp1/project_UI_overview3.png",
+               "alt":"Project UI Overview"
+            },
+            {
+               "path":"assets/img/intern/exp1/project_UI_overview2.png",
+               "alt":"Project UI Overview"
+            },
+            {
+               "path":"assets/img/intern/exp1/project_UI_overview.png",
+               "alt":"Project UI Overview"
+            },
+            {
+               "path":"assets/img/intern/exp1/admin_ui.png",
+               "alt":"Project Admin Page"
+            },
+            {
+               "path":"assets/img/intern/exp1/testing_ui_overview.jpg",
+               "alt":"Project Testing UI Overview"
             }
          ],
          "languages":"Python/Javascript/HTML5",
