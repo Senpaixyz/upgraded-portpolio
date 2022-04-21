@@ -3,13 +3,14 @@
    "data":[
       {
          "project_name":"Anomaly Detection System",
-         "project_path":"ads",
+         "project_path":"anomaly-detection",
          "category":"Machine Learning/Web Application",
          "company_name":"Elerock",
          "company_favicon":"assets/img/intern/exp1/poseidon-logo-small.jpg",
 		 "company_website": "https://elecrock.com/",
 		 "company_overview":"The heart of Elecrock is our unique Test and Learn Culture focused on generating innovative ideas and equips you with the practices, technologies and expertise to rapidly turn those ideas into business value.",
          "project_date":"October 18. 2021",
+       "project_app": "https://network-anomaly-detection-knn.herokuapp.com/",
 		 "project_url": "https://elecrock.com/using-flask-and-knn-for-realtime-anomaly-detection/",
          "overview":"KNN algorithm is a type of supervised machine learning algorithm that predicts the possible label base from its nearest neighbor. The algorithm works by detecting the outliers, it is the task of identifying observations that may be considered as anomalous based on the given supervised network packets. ",
          "images":[
@@ -45,6 +46,44 @@
          "languages":"Python/Javascript/HTML5",
          "role":"Programmer",
 		 "type": "Internship"
+      },
+      {
+         "project_name":"Deposit Assure",
+         "project_path":"deposit-assure",
+         "category":"Web Application",
+         "company_name":"Deposit Assure",
+         "company_favicon":"assets/img/intern/exp2/logo_text.png",
+		 "company_website": "https://www.depositassure.com.au/",
+		 "company_overview":"Deposit Assure is out to change the game. Based in Melbourne, Australia, we are here to help more people realise their property dreams. We offer a viable and smarter approach to using cash to secure your new property purchase – deposit bonds. And most importantly, we make the whole process easy.",
+         "project_date":"January 2021 - Present",
+       "project_app": "Development",
+		 "project_url": "https://www.depositassure.com.au/",
+         "overview":"To make our vision a reality, we work closely with mortgage brokers, conveyancers, lenders and developers. Bringing together direct access to our deposit bond service with quality expert advice and resources, we give them everything they need to help their clients. And we won’t stop looking for new and better ways to do this",
+         "images":[
+            {
+               "path":"assets/img/intern/exp2/screenshot1.JPG",
+               "alt":"Deposit Assure Page"
+            },
+            {
+               "path":"assets/img/intern/exp2/screenshot2.JPG",
+               "alt":"Deposit Assure Page"
+            },
+
+            {
+               "path":"assets/img/intern/exp2/screenshot3.JPG",
+               "alt":"Deposit Assure Page"
+            },
+
+            {
+               "path":"assets/img/intern/exp2/screenshot4.JPG",
+               "alt":"Deposit Assure Page"
+            }
+
+
+         ],
+         "languages":"Laravel/JQuery/HTML5",
+         "role":"Programmer",
+		 "type": "Work"
       }
    ]
 }
