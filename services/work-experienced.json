@@ -5,13 +5,13 @@
          "project_name":"Anomaly Detection System",
          "project_path":"anomaly-detection",
          "category":"Machine Learning/Web Application",
-         "company_name":"Elerock",
+         "company_name":"Poseidon",
          "company_favicon":"assets/img/intern/exp1/poseidon-logo-small.jpg",
 		 "company_website": "https://elecrock.com/",
 		 "company_overview":"The heart of Elecrock is our unique Test and Learn Culture focused on generating innovative ideas and equips you with the practices, technologies and expertise to rapidly turn those ideas into business value.",
          "project_date":"October 18. 2021",
-       "project_app": "https://network-anomaly-detection-knn.herokuapp.com/",
-		 "project_url": "https://elecrock.com/using-flask-and-knn-for-realtime-anomaly-detection/",
+       "project_app": "https://github.com/Senpaixyz/AnomalyDetection-WebApplication",
+		 "project_url": "https://github.com/Senpaixyz/AnomalyDetection-WebApplication",
          "overview":"KNN algorithm is a type of supervised machine learning algorithm that predicts the possible label base from its nearest neighbor. The algorithm works by detecting the outliers, it is the task of identifying observations that may be considered as anomalous based on the given supervised network packets. ",
          "images":[
             {
@@ -43,21 +43,21 @@
                "alt":"Project Testing UI Overview"
             }
          ],
-         "languages":"Python/Javascript/HTML5",
-         "role":"Programmer",
+         "languages":"Python/Javascript/Flask/Machine Learning",
+         "role":"AI Developer/ Full Stack Programmer",
 		 "type": "Internship"
       },
       {
-         "project_name":"Deposit Assure",
+         "project_name":"Freelancer - Deposit Assure",
          "project_path":"deposit-assure",
          "category":"Web Application",
-         "company_name":"Deposit Assure",
+         "company_name":"Freelancer - Deposit Assure",
          "company_favicon":"assets/img/intern/exp2/logo_text.png",
-		 "company_website": "https://www.depositassure.com.au/",
+		 "company_website": "https://www.devthecrm.depositassure.com.au",
 		 "company_overview":"Deposit Assure is out to change the game. Based in Melbourne, Australia, we are here to help more people realise their property dreams. We offer a viable and smarter approach to using cash to secure your new property purchase – deposit bonds. And most importantly, we make the whole process easy.",
-         "project_date":"January 2021 - Present",
+         "project_date":"January 2022 - January 2023",
        "project_app": "Development",
-		 "project_url": "https://www.depositassure.com.au/",
+		 "project_url": "https://www.devthecrm.depositassure.com.au",
          "overview":"To make our vision a reality, we work closely with mortgage brokers, conveyancers, lenders and developers. Bringing together direct access to our deposit bond service with quality expert advice and resources, we give them everything they need to help their clients. And we won’t stop looking for new and better ways to do this",
          "images":[
             {
@@ -81,8 +81,81 @@
 
 
          ],
-         "languages":"Laravel/JQuery/HTML5",
-         "role":"Programmer",
+         "languages":"Laravel8/JQuery/Bootstrap4/JavaScript",
+         "role":"Full Stack Developer",
+		 "type": "Work"
+      },
+      {
+         "project_name":"Freelancer - Himmax",
+         "project_path":"himmax",
+         "category":"Web Application",
+         "company_name":"Freelancer - Himmax",
+         "company_favicon":"assets/img/intern/himmax/logo_text.png",
+		 "company_website": "https://dev.himmax.com/",
+		 "company_overview":"Himmax is a Manila-based supplier,installer and manufacturer of Fire Detection Alarm, Access controller, Intrusion, Alarm & other Security System for more than 25 years.",
+         "project_date":"January 2022 - January 2023",
+       "project_app": "Development",
+		 "project_url": "https://dev.himmax.com/",
+         "overview":"Himmax is a Manila-based supplier,installer and manufacturer of Fire Detection Alarm, Access controller, Intrusion, Alarm & other Security System for more than 25 years.",
+         "images":[
+            {
+               "path":"assets/img/intern/himmax/s1.JPG",
+               "alt":"Himmax Page"
+            },
+            {
+               "path":"assets/img/intern/himmax/s2.JPG",
+               "alt":"Himmax Page"
+            },
+
+            {
+               "path":"assets/img/intern/himmax/s3.JPG",
+               "alt":"Himmax Page"
+            },
+
+            {
+               "path":"assets/img/intern/himmax/s4.JPG",
+               "alt":"Himmax Page"
+            },
+
+            {
+               "path":"assets/img/intern/himmax/s5.JPG",
+               "alt":"Himmax Page"
+            }
+
+         ],
+         "languages":"Laravel8/JQuery/Bootstrap4/JavaScript",
+         "role":"Full Stack Developer",
+		 "type": "Work"
+      },
+      {
+         "project_name":"Freelancer - mco88",
+         "project_path":"mco88",
+         "category":"Web Application",
+         "company_name":"Freelancer - MCO88",
+         "company_favicon":"assets/img/intern/mc8/logo.jpg",
+		 "company_website": "https://mco88.com/",
+		 "company_overview":"MC0 88 Marketing Corporation was established in Year 2022. The nature of our business is the marketing and distribution of high quality local and imported houseware products. Our Warehouse is located at Lot 1324 Josefina Subdivision, Brgy. Mambugan, Antipolo City, Rizal Province.",
+         "project_date":"January 2022 - January 2023",
+       "project_app": "Development",
+		 "project_url": "https://mco88.com/",
+         "overview":"MC0 88 Marketing Corporation was established in Year 2022. The nature of our business is the marketing and distribution of high quality local and imported houseware products. Our Warehouse is located at Lot 1324 Josefina Subdivision, Brgy. Mambugan, Antipolo City, Rizal Province.",
+         "images":[
+            {
+               "path":"assets/img/intern/mc8/s1.JPG",
+               "alt":"MCO88 Page"
+            },
+            {
+               "path":"assets/img/intern/mc8/s2.JPG",
+               "alt":"MCO88 Page"
+            },
+            {
+               "path":"assets/img/intern/mc8/s3.JPG",
+               "alt":"MCO88 Page"
+            }
+
+         ],
+         "languages":"Laravel8/JQuery/Bootstrap4/JavaScript",
+         "role":"Full Stack Developer",
 		 "type": "Work"
       }
    ]
