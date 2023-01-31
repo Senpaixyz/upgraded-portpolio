@@ -1,0 +1,406 @@
+<%- include('templates/header'); -%>
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h3 class="logo"><a href="/">JHI<span class="text-danger">CER</span></a></h3>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Me</a></li>
+          <li><a class="nav-link scrollto" href="#proficiency">Tech</a></li>
+          <li><a class="nav-link scrollto " href="#work">Projects</a></li>
+          <li><a class="nav-link scrollto " href="#e-cert">E-cert</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4"><span class="text-warning">$"</span>Hi! Visitor<span class="text-warning">"</span></h1>
+          <p class="hero-subtitle mb-4"><span class="typed" data-typed-items="<b class='text-warning'>$</b>{Machine Learning Developer}, <b class='text-warning'>$</b>{Developer}, <b class='text-warning'>$</b>{Freelancer}"></span></p>
+          <p class="pt-3"><a class="btn btn-danger px-4 scrollto" href="#contact" role="button">CONTACT ME</a></p> 
+        </div>
+      </div>
+    </div>
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row ">
+                    <div class="col-sm-12 col-md-12 ">
+                      <div class="about-img">
+                        <img src="assets/img/me/ID.jpg" class="img-fluid rounded b-shadow-a mx-auto d-block w-50" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-md-12">
+                      <div class="about-info text-center">
+                        <h3>Jheno Silleza Cerbito</h3>
+                        <div class="line-mf"></div>
+                        <p class="subtitle-a">Full Stack Developer/ AI Programmer</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                    </p>
+                    <p class="lead">
+                      <blockquote class="blockquote mb-5">
+                        <p class="mb-0">Hardworking coder who can communicate clearly and actively listen. I'm looking for an job to help me enhance my programming skills, implement precise bug fixes, and raise corporate efficiency all at the same time.</p>
+                        <p class="blockquote-footer mt-5 mb-5">Cited <cite title="Source Title">Jheno S. Cerbito</cite></p>
+                      </blockquote>
+                    </p>
+                    <p class="lead text-center">
+                      <a class="btn btn-dark" target="_blank" href="https://drive.google.com/file/d/10O8evL7DAcDpujG250GvIrAcDD_cwMov/view?usp=sharing">Know More About Me</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="proficiency" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Tech. Proficiency
+              </h3>
+              <p class="subtitle-a">
+                The following is a list of my technological abilities.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+
+                <% skills.data.forEach(function(row){ %>
+                  <div class="swiper-slide">
+                    <div class="testimonial-box">
+                      <div class="row">
+                      <% row.forEach(function(values){ %>
+                        <div class="col-md-4">
+                          <div class="service-box">
+                            <div class="service-ico">
+                              <span class="ico-circle"><i class="<%= values.icon %>"></i></span>
+                            </div>
+                            <div class="service-content">
+                              <h2 class="s-title"><%= values.title %></h2>
+                              <p class="s-description text-justify">
+                                <%= values.description %>
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      <% }) %>
+                      </div>
+                    </div>
+                  </div>
+                <% }); %>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
+      <div class="container position-relative">
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Projects
+              </h3>
+              <p class="subtitle-a">
+                The following is a list of previous projects that I've worked on.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div  class="row" id="data-container" ></div>
+        <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12 ">
+                <div id="pagination" class="d-block mb-3"></div>
+            </div>
+        </div>
+       
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/work-bg.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h4 class="title-a text-center my-3 text-white">
+              WORK EXPERIENCED
+            </h4>
+            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+              <div class="swiper-wrapper">
+                <% work.data.forEach(function(data){ %>
+                    <div class="swiper-slide">
+                      <div class="testimonial-box">
+                        <div class="author-test">
+                          <img src="<%= data.company_favicon %>" alt="" class="rounded-circle b-shadow-a">
+                          <span class="author"><%= data.company_name %></span>
+                        </div>
+                        <div class="content-test">
+                          <p class="description lead">
+                            <%= data.company_overview %>
+                          </p>
+                          <hr>
+                          <a href='/<%= data.project_path%>' class="btn btn-primary text-light">View More</a>
+                        </div>
+                      </div>
+                    </div><!-- End testimonial item -->
+                <% }); %>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
+          
+        </div> -->
+          </div>
+        </div>
+      </div>
+    </div><!-- End Testimonials Section -->
+
+    <!-- ======= Blog Section ======= -->
+    <section id="e-cert" class="blog-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Certificates
+              </h3>
+              <p class="subtitle-a">
+                The credentials below show my previous accomplishments from webinars, online courses, and other events.
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row" id="cert-container">
+        </div>
+        <div class="row">
+          <div class="col-md-12 col-sm-12 col-xs-12 mt-5">
+              <div id="cert-pagination" class="d-block mb-3"></div>
+          </div>
+      </div>
+      </div>
+    </section><!-- End Blog Section -->
+    <%- include('forms/contact'); -%>
+  </main><!-- End #main -->
+  <%- include('templates/footer'); -%>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/jquery/jquery.min.js"></script>
+    <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="assets/vendor/counterup/counterup.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/venobox/venobox.min.js"></script>
+    <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+    <script src="assets/vendor/swal/sweetalert.min.js"></script>
+    <script src="assets/vendor/toaststr/toastr.min.js"></script>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/pagination.min.js"></script>
+  <script src="assets/js/email-message.js"></script>
+  <script src="assets/js/download-pdf.js"></script>
+<script>
+
+  window.onresize = ()=> {
+    let pagination_count = 3;
+    let ecert_total = 15;
+    let proj_total = 10;
+    if (window.matchMedia('screen and (max-width: 768px)').matches) {
+          pagination_count = 1;
+    }
+    paginate(pagination_count,ecert_total,proj_total);
+  }
+ $(function () {
+   
+       let pagination_count = 3;
+       let ecert_total = 15;
+       let proj_total = 10;
+       if (window.matchMedia('screen and (max-width: 768px)').matches) {
+          pagination_count = 1;
+       }
+       paginate(pagination_count,ecert_total,proj_total);
+
+  });
+
+  function paginate(pagination_count,ecert_total,proj_total){
+        let project_paginate = new Promise((resolve,reject)=>{
+                  let container = $('#pagination');
+                  setTimeout(()=>{
+                            container.pagination({
+                              dataSource: '/fetch-projects',
+                              locator: 'data',
+                              totalNumber: proj_total,
+                              pageSize:  pagination_count,
+
+                              callback: function (obj, pagination) {
+                                let dataHtml = ``;
+                                $.each(obj, function (index, item) {
+                                      dataHtml += `
+                                                      <div class="col-md-4">
+                                                        <div class="work-box">
+                                                          <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                                            <div class="work-img">
+                                                              <img src="`+item.image_url+`" alt="`+item.title+`" class="img-fluid">
+                                                            </div>
+                                                          </a>
+                                                          <div class="work-content">
+                                                            <div class="row">
+                                                              <div class="col-sm-8">
+                                                                <h2 class="w-title">`+item.title+`</h2>
+                                                                <div class="w-more">
+                                                                  <span class="w-ctegory">`+item.type+`</span> <br><span class="w-date">-`+item.lang+`</span>
+                                                                </div>
+                                                              </div>
+                                                              <div class="col-sm-4">
+                                                                  <a class="btn btn-dark" href="`+item.url+`" target="_blank">`+item.btn+`</a>
+                                                              </div>
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>`;
+                                  });
+                                  $('#data-container').html(dataHtml);
+                              }
+                          })
+                        resolve();
+                        }
+                          
+                  ,1000);
+                
+                  
+        });
+        project_paginate.then(()=>{
+          let cert_pagination_promise = new Promise((resolve,reject)=>{
+                let cert_pagination =  $('#cert-pagination');
+                setTimeout(()=>{
+                                cert_pagination.pagination({
+                                    dataSource: '/fetch-certificates',
+                                    locator: 'data',
+                                    totalNumber: ecert_total,
+                                    pageSize: pagination_count,
+                                    callback: function (obj, pagination) {
+                                      let dataHtml = ``;
+                                      $.each(obj, function (index, item) {
+                                            dataHtml += `
+                                                      <div class="col-md-4">
+                                                        <div class="card card-blog">
+                                                          <div class="card-img">
+                                                            <a href="`+item.image_url+`" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                                                              <div class="work-img bg-light">
+                                                                <iframe src="`+item.image_url+`" frameborder="0" height="280px" width="100%" style="background:white;" allow="autoplay"></iframe>
+                                                              </div>
+                                                            </a>
+                                                          </div>
+                                                          <div class="card-body">
+                                                            <div class="card-category-box">
+                                                              <div class="card-category">
+                                                                <h6 class="category">`+item.type+`</h6>
+                                                              </div>
+                                                            </div>
+                                                            <h3 class="card-title"><a href="blog-single.html">`+item.title+`</a></h3>
+                                                          </div>
+                                                          <div class="card-footer">
+                                                            <div class="post-author">
+                                                              <a href="#">
+                                                                <img src="`+item.logo+`" alt="" class="avatar rounded-circle">
+                                                                <span class="author">`+item.source+`</span>
+                                                              </a>
+                                                            </div>
+                                                            <div class="post-date">
+                                                              <span class="bi bi-clock"></span>`+item.date+`
+                                                            </div>
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                            `;
+                                        });
+                                        $('#cert-container').html(dataHtml);
+                                    }
+                                })
+                              resolve();
+                              }
+                              
+                ,1000)
+
+               
+          });
+          cert_pagination_promise.then(()=>{
+            console.log("Success fetching e-cert");
+          }).catch((err)=>{
+          console.log("Theres something wrong fetching e-cert");
+        });
+
+        }).catch((err)=>{
+          console.log("Theres something wrong fetching projects");
+        });
+  }
+
+  </script>
+</body>
+
+</html>

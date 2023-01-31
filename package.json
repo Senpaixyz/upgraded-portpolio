@@ -22,5 +22,18 @@
     "nodemailer-smtp-transport": "^2.7.4",
     "nodemon": "^2.0.14",
     "parcel-bundler": "^1.12.5"
+  },
+  "pkg": {
+      "scripts": [
+        "services/information.js",
+        "api/nodemailer.js",
+        "dist/index.js"
+      ],
+      "assets": [
+          "services/certificates.json",
+          "services/portpolio.json",
+          "services/skills.json",
+          "services/work-experienced.json"
+      ]
   }
 }

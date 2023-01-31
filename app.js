@@ -4,6 +4,8 @@ const nodemailer = require('./api/nodemailer');
 const validator = require('email-validator');
 const information = require('./services/information');
 const { json } = require('express/lib/response');
+const path = require('path');
+
 
 const app = express();
 require('dotenv').config()
@@ -34,7 +36,7 @@ app.get('/fetch-projects',(req,res)=>{
     pageSize = Number(req.query.pageSize);
     pageNumber = Number(req.query.pageNumber);
     pageArray = [];
-    fs.readFile("services/portpolio.json", "utf-8", (err, jsonString) => {
+    fs.readFile(path.join(__dirname,"services/portpolio.json"), "utf-8", (err, jsonString) => {
         if (err) {
           console.log("Error reading file from disk:", err);
           return;
@@ -61,7 +63,7 @@ app.get('/fetch-certificates',(req,res)=>{
     pageSize = Number(req.query.pageSize);
     pageNumber = Number(req.query.pageNumber);
     pageArray = [];
-    fs.readFile("services/certificates.json", "utf-8", (err, jsonString) => {
+    fs.readFile(path.join(__dirname,"services/certificates.json"), "utf-8", (err, jsonString) => {
         if (err) {
           console.log("Error reading file from disk:", err);
           return;
